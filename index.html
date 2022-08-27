@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staj Okulu </title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.stajokulu.com/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+      
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+            <a href="#news" onclick="closeNav();">Anasayfa</a>
+            <a href="#aboutt" onclick="closeNav();">Hakkımızda</a>
+            <a href="#duyuru" onclick="closeNav();">Duyurular</a>
+            <a href="#egitmen" onclick="closeNav();">Eğitmenlerimiz</a>
+            <a href="#medya" onclick="closeNav();">Medya</a>
+            <a href="#spons" onclick="closeNav();">Sponsorlar</a>
+            <a href="#sss" onclick="closeNav();">SSS</a>
+            <a href="#iletisim" onclick="closeNav();">İletişim</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="position: absolute; z-index: 33; right: 55px; display: flex; align-items: center; font-size: 40px; margin-top: 0.3em;" onclick="openNav()">
+  <i class="fa fa-bars bar" style="display:none;"></i>
+</span>
+
+
+    <div class="container sticky">
+        <div class="row navbar">
+            <div class="col-2"> 
+                <img src="Imgs/logo.png" alt="">
+            </div>
+            <div class="col-8">
+                <ul class="links">
+                   <a href="">
+                    <li>Anasayfa</li>
+                   </a> 
+                   <a href="#aboutt">
+                    <li>Hakkımızda</li>
+                   </a>
+                   <a href="#duyuru">
+                    <li>Duyurular</li>
+                   </a>
+                   <a href="#egitmen">
+                    <li>Eğitmenlerimiz</li>
+                   </a> 
+                   <a href="#medya">
+                    <li>Medya</li>
+                   </a>
+                   <a href="#spons">
+                    <li>Sponsorlar</li>
+                   </a>
+                   <a href="#sss">
+                    <li>SSS</li>
+                   </a>
+                   <a href="#iletisim">
+                    <li>İletişim</li>
+                   </a>
+                </ul>
+            </div>
+            <div class="col-2 btn-cntr">
+                <a href="https://empatik.hrpeak.com/qtev46zu6gnyysn8skfxlavx4s.job">
+                    <button class="basvuru-button">Başvuru</button>
+                </a>
+                
+            </div>
+        </div>       
+    </div>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="padding-left: 0; padding-right:0;">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="swiper-slide">
+                              <img class="swiper-height" style="height:80vh; width: 100%;" src="Imgs/s11.avif" alt="">
+                              <h5 class="who-teach" style="color: #FCF8E8;">Hocalarımız Kimlerdir?</h5>
+                              <button class="teachers-button animate__heartBeat"  id="myElem">Eğitmenlerimiz</button>
+
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <img style="height: 80vh; width: 100%;" src="Imgs/s2.avif"  alt="">
+                          <h5 class="who-teach">Staj Okulu Mezunları</h5>
+                          <button class="teachers-button animate__heartBeat" id="myElem2">Mezunlarımız</button>
+
+                      </div>
+                      <div class="swiper-slide">
+                          <img style="height: 80vh; width: 100%;" src="Imgs/s3.avif"  alt="">
+                          <h5 class="who-teach who-teach2">Staj Okulu'ndan Haberler?</h5>
+                          <button class="teachers-button animate__heartBeat" id="myElem3">Duyurular</button>
+
+                      </div>
+                
+                    </div> 
+                    <div class="swiper-button-next" style="color: #FCF8E8;"></div>
+                    <div class="swiper-button-prev" style="color: #FCF8E8;"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container headline"  id="aboutt">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title">Hakkımızda</h2>
+            </div>
+            <div class="col-lg-6 col-md-12 back-about-image" style="margin-top: 3em;">
+                <img style="width: 300px; height: 300px;" class="about-image" src="Imgs/hakkinda.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 about-text">
+                <div>
+                    <h4 style="margin-top: 3em;">Staj Okulu Nedir?</h4>
+                    <p>
+                        StajOkulu , 2001 yılında 5 gönüllü bilişim eğitmeni ve 22 öğrenci ile ilk sınıfını açmıştı. Bugün itibariyle 500’den fazla bilişim profesyonellerinin gönüllü eğitmen olarak destek verdiği okulda 2000’den fazla öğrenciye staj imkanı sağlamıştır.
+                    </p>
+                    <p>
+                        Özgün ve henüz benzersiz bir yapıya sahip olan StajOkulu’nda; Üniversitelerde eğitim almakta olan gençler, sektöründe uzun yıllardır çalışmış kişilerle bir araya gelip, uzmanlarından ücretsiz eğitim almakta, onların vizyonlarını ve birikimlerini dinleme imkanı bulmaktadır.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <!-- <div class="container" style="margin-top: 3em;">
+       <div class="row">      
+          <div class="content">
+            <div class="col-4">
+              <div class="row">
+                  <div class="col-12">
+                    <h2>YIL</h2>
+                  </div>
+                  <div class="col-12">
+                    <div class="value" akhi="21">0</div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <h2>EĞİTMEN</h2>
+                </div>
+                <div class="col-12">
+                  <div class="value1" akhi1="200">0</div>
+                </div>
+             </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <h2>KATILIMCI</h2>
+                </div>
+                <div class="col-12">
+                  <div class="value2" akhi2="2000">0</div>
+                </div>
+             </div>
+            </div>
+          </div>
+          <!-- <div class="col-12">
+            <div class="content">
+              <div class="value" akhi="21">0 EĞİTMEN</div>
+              <div class="value" akhi="200">0</div>
+              <div class="value" akhi="20000">0</div>
+            </div>
+          </div>          -->
+       </div>
+    </div>
+    
+
+    
+    <div class="container duyuruline" id="duyuru">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title">Duyurular</h2>
+            </div>
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-12 duyuruline1">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="w-100" src="Imgs/d1.jpg" alt="">
+                            </div>
+                            <div class="col-12">
+                                <p>Tem 10, 2017</p>
+                                <p class="card-text">
+                                Staj Okulu İyilik Değil, İşimiz</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 duyuruline2">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="w-100" src="Imgs/d2.jpg" alt="">
+                            </div>
+                            <div class="col-12">
+                                <p>Eyl 02, 2016</p>
+                                <p class="card-text">StajOkulu16 Bilişim Öğrencilerinin Kariyer Konusundaki Görüşleri ve Bilinç Düzeyleri / StajOkulu İK Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 duyuruline3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img class="w-100" src="Imgs/d3.jpg" alt="">
+                                </div>
+                                <div class="col-12">
+                                    <p>Eyl 01, 2016</p>
+                                    <p class="card-text">ARP & Gateway Scanner / StajOkulu Siber Güvenlik Projesi</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container egit" id="egitmen">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title">Eğitmenlerimiz</h2>
+            </div>
+
+            <div class="col-12">
+                    <!-- Swiper -->
+                <div class="swiper mySwiper2" >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" style="background-color: #ECB390;" >
+                        <div class="card mb-3" style="max-width: 940px; border: none; padding: 25px; background-color: #ECB390;">
+                            <div class="row g-0">
+                              <div class="col-md-3 img-circ">
+                                <img style="height: 200px; width:auto; border-radius: 50%;" src="Imgs/enes-modified.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-9">
+                                <h4 class="ml-text nickname">Enes Varol</h4>
+                                <h5 class="ml-text">Oracle Techno Functional Developer</h5>
+                              </div>
+                              <div class="col-md-10">
+                                <div class="card-body">
+                                 
+                                  <p class="card-text ml-text" style="font-size: 14px;">2013 Yılında Artvin Çoruh Üniversitesi Bilgisayar Programcılığı Bölümünden mezun olmuş ve 2015 yılında Anadolu Üniversitesi'nden İşletme Bölümünü okumuştur. Şuanda Allianz'da Plsql Developer olarak çalışmaktadır. Aynı Zamanda Staj Okulu'nda Eğitmenlik yapmaktadır. </p>
+                                   <div style="display: flex;">
+                                    <img style="height: 24px; width: 24px;" src="Imgs/call.png" alt="">
+                                   <p style="margin-left: 1em;"> (536) 674 0806</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>  
+                        
+                      
+                        <div class="swiper-slide" style="background-color: #ECB390;" >
+                            <div class="card mb-3" style="max-width: 940px; border: none; padding: 25px; background-color: #ECB390;">
+                                <div class="row g-0">
+                                  <div class="col-md-3 img-circ">
+                                    <img style="height: 200px; width:auto; border-radius: 50%;" src="Imgs/Sena-modified.png" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <h4 class="ml-text nickname">Sena Özyurt</h4>
+                                    <h5 class="ml-text">Editor at Gzt & Coordinator at Internship School</h5>
+                                  </div>
+                                  <div class="col-md-10">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text ml-text" style="font-size: 14px;">2021 Yılında İstanbul Üniversitesi Siyaset bilimi ve uluslararası ilişkiler Bölümünden mezun olmuş Şuanda Gzt'de Editör olarak çalışmaktadır. Aynı Zamanda Staj Okulu'nda Koordinatörlük görevini yapmaktadır. </p>
+                                       <div style="display: flex;">
+                                        <img style="height: 24px; width: 24px;" src="Imgs/call.png" alt="">
+                                       <p style="margin-left: 1em;"> (534) 222 4126</p>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: #ECB390;" >
+                          <div class="card mb-3" style="max-width: 940px; border: none; padding: 25px; background-color: #ECB390;">
+                              <div class="row g-0">
+                                <div class="col-md-3 img-circ">
+                                  <img style="height: 200px; width:auto; border-radius: 50%;" src="Imgs/kadir-modified.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-9">
+                                  <h4 class="ml-text nickname">Kadir Öztürk</h4>
+                                  <h5 class="ml-text">Oracle Techno Functional Developer</h5>
+                                </div>
+                                <div class="col-md-10">
+                                  <div class="card-body">
+                                   
+                                    <p class="card-text ml-text" style="font-size: 14px;">1997 Yılında Yıldız Teknik Üniversitesi Bilgisayar Programcılığı Bölümünden mezun olmuş Marmara Üniversitesinde Yönetim Bilişim Sistemleri ve Mühendisliği alanında master yapmıştır. Şuanda Akbank'da Plsql Developer olarak çalışmaktadır. Aynı Zamanda Staj Okulu'nda Eğitmenlik yapmaktadır. </p>
+                                     <div style="display: flex;">
+                                      <img style="height: 24px; width: 24px;" src="Imgs/call.png" alt="">
+                                     <p class="ml-text2" style="margin-left: 1em;"> (532) 322 1241</p>
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        <div class="swiper-slide" style="background-color: #ECB390;" >
+                            <div class="card mb-3" style="max-width: 940px; border: none; padding: 25px; background-color: #ECB390;">
+                                <div class="row g-0">
+                                  <div class="col-md-3  img-circ">
+                                    <img style="height: 200px; width:auto; border-radius: 50%;" src="Imgs/merve-modified.png" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <h4 class="ml-text nickname">Merve Özerkin</h4>
+                                    <h5 class="ml-text">Kalite Güvence Sorumlusu</h5>
+                                  </div>
+                                  <div class="col-md-10">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text ml-text ml-text" style="font-size: 14px;">2016 Yılında Sakarya Üniversitesi Çalışma Ekonomisi ve Endüstri İlişkiler Bölümünden mezun olmuş İstanbul Üniversitesinde iş sağlığı ve güvenliği alanında lisans yapmıştır. Şuanda Empatik İnsan Kaynakları Şirketinde Kalite Güvence Sorumlusu  olarak çalışmaktadır. Aynı Zamanda Staj Okulu'nda Eğitmenlik yapmaktadır. </p>
+                                       <div style="display: flex;">
+                                        <img style="height: 24px; width: 24px;" src="Imgs/call.png" alt="">
+                                       <p  class="ml-text" style="margin-left: 1em;"> (532) 421 6321</p>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next" style="color: #f5f5f5;"></div>
+                    <div class="swiper-button-prev" style="color: #f5f5f5;"></div>
+                    <div class="swiper-pagination" style="color: #f5f5f5;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="medya">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title headline">Medya</h2>
+            </div>
+            <div class="col-lg-12 close-image" style="display:flex;">
+                <img class="img-wt close-image leftanimation" style="width: 25%;" src="Imgs/m1.jpg" alt="">
+                <img class="img-wt close-image topanimation" style="width: 25%;" src="Imgs/m2.jpg" alt="">
+                <img class="img-wt close-image topanimation" style="width: 25%;" src="Imgs/m3.jpg" alt="">
+                <img class="img-wt close-image rightanimation" style="width: 25%;" src="Imgs/m4.jpg" alt="">  
+            </div>
+
+          <div class="col-md-6" style="display:flex;">
+              <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m1.jpg" alt="">
+              <img class="img-wt kapaimage"  style="width: 50%;" src="Imgs/m2.jpg" alt="">
+          </div>
+        
+
+          <div class="col-md-6" style="display:flex;">
+            <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m3.jpg" alt="">
+            <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m4.jpg" alt="">  
+          </div>
+
+          <div class="col-md-6" style="display:flex;">
+            <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m5.jpg" alt="">
+            <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m6.jpg" alt="">
+        </div>
+      
+
+        <div class="col-md-6" style="display:flex;">
+          <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m7.jpg" alt="">
+          <img class="img-wt kapaimage" style="width: 50%;" src="Imgs/m8.jpg" alt="">  
+        </div>
+
+
+            <div class="col-lg-12" style="display:flex;">
+                <img class="img-wt close-image leftanimation" style="width: 25%;" src="Imgs/m5.jpg" alt="">
+                <img class="img-wt close-image bottomanimation" style="width: 25%;" src="Imgs/m6.jpg" alt="">
+                <img class="img-wt close-image bottomanimation" style="width: 25%;" src="Imgs/m7.jpg" alt="">
+                <img class="img-wt close-image rightanimation" style="width: 25%;" src="Imgs/m8.jpg" alt="">  
+            </div>
+        </div>
+    </div>
+
+    <div class="container" class="rightspons" id="spons">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title">Sponsorlar</h2>
+            </div>
+            <div class="col-lg-3 col-md-6 ortala">
+                <img class="image-mt" src="Imgs/s1.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala">
+                <img class="image-mt"  src="Imgs/s2.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala">
+                <img class="image-mt"  src="Imgs/s3.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala">
+                <img class="image-mt"  src="Imgs/s4.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala" style="margin-top: 2em;">
+                <img class="image-mt"  src="Imgs/s5.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala"  style="margin-top: 2em;">
+                <img class="image-mt"  src="Imgs/s6.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala"  style="margin-top: 2em;">
+                <img class="image-mt"  src="Imgs/s7.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 ortala"  style="margin-top: 2em;">
+                <img class="image-mt"  src="Imgs/s8.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container" id="sss">
+        <div class="row">
+          
+            <div class="col-12 tit">
+                <h2 class="title">Sıkça Sorulan Sorular</h2>
+            </div>
+           
+
+            <div class="col-lg-6 col-md-12 leftanimation">        
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       Staj Okulu Nedir?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu, 2001 yılında 5 gönüllü bilişim eğitmeni ve 22 öğrenci ile ilk sınıfını açmıştı. Bu gün itibariyle; 500’den fazla bilişim profesyonelinin gönüllü eğitmen olarak destek verdiği okulda, 2.000’den fazla öğrenciye staj imkânı sağlamıştır. StajOkulu bilişim ve insan kaynakları alanında hizmet vermeye devam etmektedir.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Eğitmenler Kimlerdir?
+
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu bilişim profesyonellerinin uzmanlık alanlarına göre bilişim derslerini içermektedir. Sadece 2016 ve 2017 döneminde verilen “İnsan Kaynakları”  eğitimlerinde ise birçok öğrenciye bilgi ve deneyim kazanma imkanı sunuldu.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      StajOkulu'nun yeri nerede?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Birçok devlet ve özel kuruluşun sponsor desteğini alan StajOkulu, katılacak öğrenci sayısına bağlı olarak üniversite konferans salonları veya amfilerinde yapılmaktadır. Bu gönüllü faaliyetlerin mekan ihtiyaçları diğer gönüllü teşekküllerin ya da kamu kurumlarının sponsorlukları ile karşılanmaktadır. Her yıl program ile birlikte güncel adres ve kroki yayınlanmaktadır.                       </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                     Firma Ziyaretleri Nedir?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu’nun 30 günlük eğitimi süresince öğrencilerini profesyonel hayata yönelik eğitmenin yanı sıra şirketlerdeki günlük iş akışını gözlemlemeleri ve ofis ortamlarını görebilmeleri için firma ziyaretleri gerçekleştirmekte.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Stajokulu hangi bölüm öğrencilerini kabul ediyor?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu, bilişim ve insan kaynakları alanında staj arayışı olan üniversite öğrencilerine hitap ediyor. Toplam 6 haftalık (30 iş günü) programda mesleki konuların yanı sıra kişisel ve sosyal gelişim içerikli seminerler ve faaliyetler ile öğrenciler iş hayatına daha hazır hale geliyorlar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 rightanimation">        
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                       Staj Okulu'na Nasıl Kayıt Olabilirim?'
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu kurumsal web sitesi üzerinden başvuruda bulunan öğrenciler, birebir mülakatlara tabi tutularak başvuruları değerlendirilir. Kontenjan dahilinde en uygun öğrenciler okula kabul edilir. Öğrencilerin ilan edilmiş olan programa tam devamlılığı esas olup bu konuya önemli/geçerli mazeret dışı tolerans gösterilmemektedir. Mazeretli devamsızlık sınırı bulunmakla birlikte sadece devam edilen günlere ait staj evrakı onaylanmaktadır.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      Stajokulu’nda hangi alanlara yer veriliyor?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>StajOkulu programları her yıl gönüllü olan bilişim ve insan kaynakları profesyonellerinin teklifleriyle oluşturulmakta ve uzmanlık alanlarını içermektedir.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Stajokulu staj olarak kabul ediyor mu?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        StajOkulu’nu 18 yıldan beri tüm üniversiteler tanımaktadır ve staj olarak kabul etmektedir. Birçok üniversite tüm öğrencilerini StajOkulu’na göndermek istediği için her üniversite için belirli stajyer limitlerimiz mevcut. Bu hizmetimizden farklı üniversitelerden birçok öğrencinin faydalanmasını hedeflemekteyiz.                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                      Stajokulu ücretli mi?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        StajOkulu başlangıcından bu yana hiç bir şekilde ücret talep etmemiştir. Tüm kaynaklar gönüllü katılımlar ve sponsorluklar yoluyla sağlanmaktadır.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                      Stajokulu’nda eğitmenler ücret alıyor mu?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        StajOkulu gönüllü eğitmenleri, eğitimlerinin piyasa değeri ne olursa olsun bu eğitimlerden hiç bir ücret talep etmezler.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+    </div>
+    
+  
+
+    <div class="container" id="iletisim">
+        <div class="row">
+            <div class="col-12 tit">
+                <h2 class="title headline">İletişim</h2>
+            </div>
+            <div class="col-lg-6 col-md-12 leftanimation">
+                <div class="row">
+                    <div class="col-12">    
+                     <input type="text" placeholder="Adınız" style="width: 70%; padding: 10px; margin-bottom:1em ;">
+                    </div>
+                    <div class="col-12">    
+                        <input type="text" placeholder="E Posta Adresiniz" style="width: 70%; padding: 10px; margin-bottom:1em ;">
+                    </div>
+                    <div class="col-12">    
+                        <input type="text" placeholder="Telefon" style="width: 70%; padding: 10px; margin-bottom:1em ;">
+                    </div>
+                    <div class="col-12">    
+                        <input type="text" placeholder="Mesajınız" style="width: 70%; padding: 10px; height: 100px; margin-bottom:1em ;">
+                    </div>
+                    <div class="col-12">
+                      <button class="save-button">Kaydet</button>
+                    </div>
+                    <div class="col-4 bottomanimation" style="padding: 25px;margin-top: 2em; background-color: #fff; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>Telefon</h5>
+                        <h6>0216 519 2222</h6>
+                    </div>
+                    <div class="col-4 bottomanimation" style="padding: 25px; margin-top: 2em;  background-color: #ECB390; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <h5>Adres</h5>
+                        <h6>
+                            Medeniyet Üniversitesi
+                            </h6>
+                    </div>
+                    <div class="col-4" style="padding: 25px; margin-top: 2em;  background-color: #fff; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>Email</h5>
+                        <h6>info@empatik.com</h6>
+                    </div>
+                </div>
+                
+              
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <iframe class="maptop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.322631725066!2d29.06272871537387!3d40.99631107930193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7e8ef4926dd%3A0xcd46d65a8527b123!2sIstanbul%20Medeniyet%20%C3%9Cniversitesi%20Kuzey%20Kamp%C3%BCs!5e0!3m2!1str!2str!4v1659548138465!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 3em;">
+      <footer>
+        <div class="col-12 footer-image">
+          <div class="col-12" style="display: flex; justify-content: center;">
+            <img style=" margin-top: 3em;"  src="Imgs/footer-logo-1.png" alt="">
+          </div>
+         
+          <div class="col-8" style="margin-left: 11em; margin-top:3em; border-bottom: 2px solid #4a555f;">
+            <ul class="links">
+              <a href="">
+               <li>Anasayfa</li>
+              </a> 
+              <a href="#aboutt">
+               <li>Hakkımızda</li>
+              </a>
+              <a href="#duyuru">
+               <li>Duyurular</li>
+              </a>
+              <a href="#egitmen">
+               <li>Eğitmenlerimiz</li>
+              </a> 
+              <a href="#medya">
+               <li>Medya</li>
+              </a>
+              <a href="#spons">
+               <li>Sponsorlar</li>
+              </a>
+              <a href="#sss">
+               <li>SSS</li>
+              </a>
+              <a href="#iletisim">
+               <li>İletişim</li>
+              </a>
+           </ul>
+          </div>
+
+          <div class="col-12" style="display: flex; justify-content: center; margin-top:3em">
+            <i style="font-size: 32px; color: #ECB390; margin-right: 1em;" class="fa-brands fa-facebook"></i>
+            <i style="font-size: 32px; color: #ECB390;" class="fa-brands fa-twitter"></i>
+            <i style="font-size: 32px; color: #ECB390; margin-left: 1em;" class="fa-brands fa-instagram"></i>
+            <i style="font-size: 32px; color: #ECB390; margin-left: 1em;" class="fa-brands fa-linkedin"></i>
+          </div>
+
+          <div class="col-12" style="display: flex; justify-content: center; margin-top:3em">
+            <p style="color: #fff;">2022 Copyright Staj Okulu. All Rights Reserved</p>
+          </div>
+           
+        </div>
+     </footer>
+    </div>
+
+
+      <script>
+        
+    window.sr = new ScrollReveal();
+
+    sr.reveal('.headline', { origin : 'left' , delay: 300 , distance: '80px'});
+    sr.reveal('.duyuruline1', { origin : 'left' , delay: 300 , distance: '80px'});
+    sr.reveal('.duyuruline2', { origin : 'bottom' , delay: 300 , distance: '80px'});
+    sr.reveal('.duyuruline3', { origin : 'right' , delay: 300 , distance: '80px'});
+    sr.reveal('.topanimation', { origin : 'bottom' , delay: 300 , distance: '80px'});
+    sr.reveal('.egit', { origin : 'left' , delay: 300 , distance: '80px'});
+    sr.reveal('.skills2', { origin : 'left' , delay: 500 , distance: '80px'});
+    sr.reveal('.leftanimation', { origin : 'left' , delay: 300 , distance: '80px'});
+    sr.reveal('.rightanimation', { origin : 'right' , delay: 300 , distance: '80px'});
+    sr.reveal('.bottomanimation', { origin : 'bottom' , delay: 300 , distance: '80px'});
+    sr.reveal('.rightspons', { origin : 'right' , delay: 300 , distance: '80px'});
+
+      </script>
+      <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 620|| document.documentElement.scrollTop > 620) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+  
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 22500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      </script>
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }  
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+         $("#myElem").hide(); 
+         setTimeout(function(){ 
+         $("#myElem").show().fadeIn(1000); 
+         },1200)(); 
+    </script>
+    <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      // function myFunction() {
+      //   var x = document.getElementById("myLinks");
+      //   if (x.style.display === "block") {
+      //     x.style.display = "none";
+      //   } else {
+      //     x.style.display = "block";
+      //   }
+      // }
+
+      /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "75%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    </script>
+  
+</body>
+</html>
